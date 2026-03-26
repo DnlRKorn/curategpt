@@ -1,4 +1,4 @@
-RUN = poetry run
+RUN = uv run
 CURATE = $(RUN) curategpt
 
 DB_PATH = stagedb
@@ -127,3 +127,8 @@ load-github-mixs:
 
 load-github-nmdc-schema-issues-prs:
 	$(CURATE) -v view index -p $(DB_PATH) -c gh_nmdc -m openai:  --view github --init-with "{repo: microbiomedata/nmdc-schema}"
+
+.PHONY: tests
+tests:
+	uv sync
+	$(RUN) pytest tests
