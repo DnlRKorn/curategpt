@@ -57,7 +57,7 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "onnxruntime>=1.20.0",
     "setuptools<81",
-    "coredis",
+    "coredis>=6.3.0",
 #onnxruntime = [
 #    {version = "<=1.19.2", python = "<3.10"},
 #    {version = "^1.20.0", python = ">=3.10"}

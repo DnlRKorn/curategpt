@@ -329,6 +329,15 @@ wheels = [
 ]
 
 [[package]]
+name = "beartype"
+version = "0.22.9"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/94/1009e248bbfbab11397abca7193bea6626806be9a327d399810d523a07cb/beartype-0.22.9.tar.gz", hash = "sha256:8f82b54aa723a2848a56008d18875f91c1db02c32ef6a62319a002e3e25a975f", size = 1608866, upload-time = "2025-12-13T06:50:30.72Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/71/cc/18245721fa7747065ab478316c7fea7c74777d07f37ae60db2e84f8172e8/beartype-0.22.9-py3-none-any.whl", hash = "sha256:d16c9bbc61ea14637596c5f6fbff2ee99cbe3573e46a716401734ef50c3060c2", size = 1333658, upload-time = "2025-12-13T06:50:28.266Z" },
+]
+
+[[package]]
 name = "beautifulsoup4"
 version = "4.14.3"
 source = { registry = "https://pypi.org/simple" }
@@ -716,9 +725,28 @@ wheels = [
 
 [[package]]
 name = "coredis"
-version = "2.3.2"
+version = "6.3.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e2/80/3f85ad50fbaef6a2c541012e028177107f2d165a1993574c39095f71352e/coredis-2.3.2.tar.gz", hash = "sha256:184a30d96af76b26746f3ceeb8312949465b5c98373d5964bf7918a8d25030d6", size = 159085, upload-time = "2023-01-09T16:23:58.646Z" }
+dependencies = [
+    { name = "anyio" },
+    { name = "beartype" },
+    { name = "deprecated" },
+    { name = "exceptiongroup" },
+    { name = "packaging" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/6f/b92b638ac25f52913d2aff61918b9f5d2663c585303b8229cc6eeb6b23db/coredis-6.3.0.tar.gz", hash = "sha256:7293b4d8e0e85d9a06f19ef226ee83028356f920c74bd0e0ac604b9664f33769", size = 208534, upload-time = "2026-03-23T16:59:12.892Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/dc/fa421bdc01c82cf3042d25868cd09986a7647b0263fae0c75dc05c87706e/coredis-6.3.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:4e6d2f27b7b6bcdbb8ffd2584d3814dae00339ec7bc2e8c04eaa428925cebed7", size = 379019, upload-time = "2026-03-23T16:58:42.915Z" },
+    { url = "https://files.pythonhosted.org/packages/0c/f8/c12036bb9885b3288e5b43c66343d8052e4aa64b8ad7585c3e0ac1fb77db/coredis-6.3.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:1a5927b5bcbd303205038af71918fcb09f6eb7b760d6139faaf6e657caa9de59", size = 373867, upload-time = "2026-03-23T16:58:44.366Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/6b/0aba7782c8e4f6a42e5ed37d1841d9b0aae285e30b555ff5a556b02c4f61/coredis-6.3.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:4c51f5337030a2d67c10fe612bb573b46840cf9b40aea12e1926aee1724e8844", size = 391030, upload-time = "2026-03-23T16:58:45.704Z" },
+    { url = "https://files.pythonhosted.org/packages/03/2d/543b680f91c220f84ab9831cb85fe8b93490b98d7d54698c9eae737304f6/coredis-6.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:f5a46fb5a7d017f377692b1d08e69c8915d24c3c9b3fd85455e75959c8facd60", size = 392910, upload-time = "2026-03-23T16:58:47.086Z" },
+    { url = "https://files.pythonhosted.org/packages/24/2a/9030959bc2510ad583305f85e6b2303288b35eb201a380f45b4905bbefbd/coredis-6.3.0-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:7db7c32408aa14cc9f50062fe55f360afc442d6778be538b5badf134068862b9", size = 381699, upload-time = "2026-03-23T16:58:48.625Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/5d/d26362c718a845c72a2090e1375121fde5fc5bc5b3b383380fea776b6c75/coredis-6.3.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:a6c5dc8313939ff62e3f1a1810083994d0c91f68d175f91ec0a38bd9f1cd7a38", size = 376790, upload-time = "2026-03-23T16:58:50.276Z" },
+    { url = "https://files.pythonhosted.org/packages/43/c9/da5b193ebeb858507b6818bc1fbf799878243e9e231130ec036881b6fd1e/coredis-6.3.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:54c8a33864435512de29b9e2f15f94b1d020bee79382a96c20dcba1f2c1aa065", size = 391725, upload-time = "2026-03-23T16:58:51.636Z" },
+    { url = "https://files.pythonhosted.org/packages/df/ce/71006651d0fcc2b383053fb6a82f17e3222a565a4dc9aa479df11ee71121/coredis-6.3.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:996d50fc4e3b16a4e69d55a0d21aa5d6cb9c3e75b2a360b062a7f955a2e565ef", size = 394816, upload-time = "2026-03-23T16:58:53.191Z" },
+    { url = "https://files.pythonhosted.org/packages/8a/d4/77ebe0280cac6e787f416a1fd017d2bb235300b55931ae254adc2027c10d/coredis-6.3.0-py3-none-any.whl", hash = "sha256:12a7966f6fc8c90aa18273dfcfe8c6eecd1245d8e24a9a1c03fb82078d18d439", size = 251084, upload-time = "2026-03-23T16:59:11.636Z" },
+]
 
 [[package]]
 name = "cryptography"
@@ -921,7 +949,7 @@ requires-dist = [
     { name = "chromadb", specifier = "==0.5.0" },
     { name = "click", specifier = ">=8.1.7,<9" },
     { name = "click-default-group", specifier = ">=1.2.4" },
-    { name = "coredis" },
+    { name = "coredis", specifier = ">=6.3.0" },
     { name = "defusedxml", specifier = ">=0.7.1" },
     { name = "duckdb", specifier = ">=1.0.0" },
     { name = "eutils", specifier = ">=0.6.0" },
@@ -1229,6 +1257,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/11/77/73b46f2f1c1f714456dd84d36e2b1c1c989c88423f74d5773f884606f3a9/eutils-0.6.1.tar.gz", hash = "sha256:68d4e007996d4b08171a936413f6ec2cd4c045ac83acf7df9e9b7110df06c030", size = 435726, upload-time = "2025-12-07T23:33:44.243Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/26/b5/d343da782460999bd3e7c3c367b91d7b77f2eaf424bff7b315ce72bb4e54/eutils-0.6.1-py3-none-any.whl", hash = "sha256:6916efd10f397f20ba0e6bd5b84d4e868e077161509e240d7c4ab1d98fb2d3b1", size = 40910, upload-time = "2025-12-07T23:33:43.053Z" },
+]
+
+[[package]]
+name = "exceptiongroup"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/50/79/66800aadf48771f6b62f7eb014e352e5d06856655206165d775e675a02c9/exceptiongroup-1.3.1.tar.gz", hash = "sha256:8b412432c6055b0b7d14c310000ae93352ed6754f70fa8f7c34141f91c4e3219", size = 30371, upload-time = "2025-11-21T23:01:54.787Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8a/0e/97c33bf5009bdbac74fd2beace167cab3f978feb69cc36f1ef79360d6c4e/exceptiongroup-1.3.1-py3-none-any.whl", hash = "sha256:a7a39a3bd276781e98394987d3a5701d0c4edffb633bb7a5144577f82c773598", size = 16740, upload-time = "2025-11-21T23:01:53.443Z" },
 ]
 
 [[package]]
@@ -3793,11 +3833,11 @@ wheels = [
 
 [[package]]
 name = "packaging"
-version = "26.0"
+version = "25.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/65/ee/299d360cdc32edc7d2cf530f3accf79c4fca01e96ffc950d8a52213bd8e4/packaging-26.0.tar.gz", hash = "sha256:00243ae351a257117b6a241061796684b084ed1c516a08c48a3f7e147a9d80b4", size = 143416, upload-time = "2026-01-21T20:50:39.064Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f", size = 165727, upload-time = "2025-04-19T11:48:59.673Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b7/b9/c538f279a4e237a006a2c98387d081e9eb060d203d8ed34467cc0f0b9b53/packaging-26.0-py3-none-any.whl", hash = "sha256:b36f1fef9334a5588b4166f8bcd26a14e521f2b55e6b9de3aaa80d3ff7a37529", size = 74366, upload-time = "2026-01-21T20:50:37.788Z" },
+    { url = "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484", size = 66469, upload-time = "2025-04-19T11:48:57.875Z" },
 ]
 
 [[package]]
@@ -5923,15 +5963,6 @@ wheels = [
 ]
 
 [[package]]
-name = "tomli-w"
-version = "1.2.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/19/75/241269d1da26b624c0d5e110e8149093c759b7a286138f4efd61a60e75fe/tomli_w-1.2.0.tar.gz", hash = "sha256:2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021", size = 7184, upload-time = "2025-01-15T12:07:24.262Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32dd3df50d43d7ff9854f8e0603945ff398974c1d91ac1ef/tomli_w-1.2.0-py3-none-any.whl", hash = "sha256:188306098d013b691fcadc011abd66727d3c414c571bb01b1a174ba8c983cf90", size = 6675, upload-time = "2025-01-15T12:07:22.074Z" },
-]
-
-[[package]]
 name = "torch"
 version = "2.11.0"
 source = { registry = "https://pypi.org/simple" }
@@ -5981,22 +6012,22 @@ wheels = [
 
 [[package]]
 name = "tox"
-version = "4.50.3"
+version = "4.34.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cachetools" },
+    { name = "chardet" },
     { name = "colorama" },
     { name = "filelock" },
     { name = "packaging" },
     { name = "platformdirs" },
     { name = "pluggy" },
     { name = "pyproject-api" },
-    { name = "tomli-w" },
     { name = "virtualenv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ae/45/e4c0ac54af794f992790abe350770bb1fa6d5a85b25d47b6182c83ec7915/tox-4.50.3.tar.gz", hash = "sha256:c745641de6cc4f19d066bd9f98c1c25f7affb005b381b7f3694a1f142ea0946b", size = 266455, upload-time = "2026-03-20T01:17:59.351Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/9b/5909f40b281ebd37c2f83de5087b9cb8a9a64c33745f334be0aeaedadbbc/tox-4.34.1.tar.gz", hash = "sha256:ef1e82974c2f5ea02954d590ee0b967fad500c3879b264ea19efb9a554f3cc60", size = 205306, upload-time = "2026-01-09T17:42:59.895Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fe/ab/369d60db70d9031341082842071541f2497741b04140816c7df82734faf6/tox-4.50.3-py3-none-any.whl", hash = "sha256:5e788a512bfe6f7447e0c8d7c1b666eb2e56e5e676c65717490423bec37d1a07", size = 207667, upload-time = "2026-03-20T01:17:57.553Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/0f/fe6629e277ce615e53d0a0b65dc23c88b15a402bb7dbf771f17bbd18f1c4/tox-4.34.1-py3-none-any.whl", hash = "sha256:5610d69708bab578d618959b023f8d7d5d3386ed14a2392aeebf9c583615af60", size = 176812, upload-time = "2026-01-09T17:42:58.629Z" },
 ]
 
 [[package]]
