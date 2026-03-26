@@ -114,7 +114,6 @@ gocampr = "curategpt.adhoc.gocam_predictor:main"
 
 [tool.uv]
 default-groups = ["dev", "optional","bioc","gpt4all","paperqa"]
-override-dependencies = ["numpy>=2"]
 
 [build-system]
 requires = ["hatchling", "uv-dynamic-versioning"]
