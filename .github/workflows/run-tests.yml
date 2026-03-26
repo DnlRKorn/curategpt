@@ -1,4 +1,4 @@
-name: curategpt QC
+name: curategpt run pytest
 
 on:
   workflow_dispatch:
