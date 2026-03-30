@@ -75,15 +75,6 @@ dev = [
     "black",
 ]
 
-docs = [
-    "sphinx>=6.1.3",
-    "sphinx-rtd-theme>=1.0.0",
-    "sphinx-autodoc-typehints>=1.2.0",
-    "sphinx-click>=4.3.0",
-    "sphinx-automodapi",
-    "myst-parser>=0.18.1",
-]
-
 optional = [
     "langchain-community",
 ]
@@ -104,6 +95,17 @@ paperqa = [
     "langchain-community"
 ]
 
+[project.optional-dependencies]
+
+docs = [
+    "sphinx>=6.1.3",
+    "sphinx-rtd-theme>=3.1.0",
+    "sphinx-autodoc-typehints",
+    "sphinx-click>=4.3.0",
+    "sphinx-automodapi",
+    "myst_parser",
+#    "python-ldap",
+]
 
 ### END DEPENDENCY GROUPS ###
 

@@ -1,4 +1,5 @@
 RUN = uv run
+INSTALL = uv sync
 CURATE = $(RUN) curategpt
 
 DB_PATH = stagedb
@@ -130,5 +131,25 @@ load-github-nmdc-schema-issues-prs:
 
 .PHONY: tests
 tests:
-	uv sync
+	$(INSTALL)
 	$(RUN) pytest tests
+
+.PHONY: prep-gh-pages-dir
+prep-gh-pages-dir:
+	rm gh-pages -rf
+	rm docs/_build -rf
+	mkdir gh-pages
+	touch gh-pages/.nojekyll
+
+.PHONY: sphinx-build-docs
+sphinx-build-docs:
+	$(INSTALL) --extra docs
+	cd docs/ && $(RUN) sphinx-apidoc -o . ../src/curategpt/ --ext-autodoc -f
+	cd docs/ && $(RUN) sphinx-build -b html . _build
+
+.PHONY: stage-docs
+stage-docs:
+	cp -r docs/_build/* gh-pages/
+
+.PHONY: make-docs
+make-docs: prep-gh-pages-dir sphinx-build-docs stage-docs
