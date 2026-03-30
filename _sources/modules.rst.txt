@@ -1,0 +1,7 @@
+curategpt
+=========
+
+.. toctree::
+   :maxdepth: 4
+
+   curategpt

@@ -1,0 +1,36 @@
+curategpt.wrappers package
+==========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   curategpt.wrappers.bio
+   curategpt.wrappers.clinical
+   curategpt.wrappers.general
+   curategpt.wrappers.investigation
+   curategpt.wrappers.legal
+   curategpt.wrappers.literature
+   curategpt.wrappers.ontology
+   curategpt.wrappers.paperqa
+
+Submodules
+----------
+
+curategpt.wrappers.base\_wrapper module
+---------------------------------------
+
+.. automodule:: curategpt.wrappers.base_wrapper
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: curategpt.wrappers
+   :members:
+   :show-inheritance:
+   :undoc-members:

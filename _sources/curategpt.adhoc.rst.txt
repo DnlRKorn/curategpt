@@ -1,0 +1,21 @@
+curategpt.adhoc package
+=======================
+
+Submodules
+----------
+
+curategpt.adhoc.gocam\_predictor module
+---------------------------------------
+
+.. automodule:: curategpt.adhoc.gocam_predictor
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: curategpt.adhoc
+   :members:
+   :show-inheritance:
+   :undoc-members:
