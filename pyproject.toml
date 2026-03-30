@@ -175,6 +175,3 @@ skip = "*.po,*.ts,.git,pyproject.toml"
 count = ""
 quiet-level = 3
 # ignore-words-list = ""
-
-[tool.uv.sources]
-venomx = { git = "https://github.com/dnlrkorn/venomx.git", rev = "main" }

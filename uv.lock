@@ -985,7 +985,7 @@ requires-dist = [
     { name = "streamlit", specifier = ">=1.22.0" },
     { name = "textract", specifier = "==1.5.0" },
     { name = "tiktoken", specifier = ">=0.7.0" },
-    { name = "venomx", git = "https://github.com/dnlrkorn/venomx.git?rev=main" },
+    { name = "venomx", specifier = ">=0.1.1" },
     { name = "wikipedia", specifier = ">=1.4.0" },
     { name = "xmltodict", specifier = ">=0.13.0" },
 ]
@@ -6299,14 +6299,18 @@ wheels = [
 
 [[package]]
 name = "venomx"
-version = "0.0.0"
-source = { git = "https://github.com/dnlrkorn/venomx.git?rev=main#f4d774b080ee667c2f4a17dd70e559298be76023" }
+version = "0.2.3"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "importlib-metadata" },
     { name = "pandas" },
     { name = "pyarrow" },
     { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/31/a6/51606b45db4e187f77f8e3b99da12eeb33a4bdd5906d2543877dc17d57db/venomx-0.2.3.tar.gz", hash = "sha256:a57297c45297f354fa3f6dd69327aca4ecfa005dedd1c7b9a12c4b1ecb469477", size = 129333, upload-time = "2026-03-30T17:04:01.204Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/ab/082b8bf10b988fe4ba58641c4610e4abaf813575ae4d8965202a5f70720a/venomx-0.2.3-py3-none-any.whl", hash = "sha256:537e37af65f486d468e7662a543f5e28393589d122e4109b7437073d72cc74ca", size = 11444, upload-time = "2026-03-30T17:03:59.394Z" },
 ]
 
 [[package]]
