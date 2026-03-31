@@ -1,6 +1,7 @@
 [project]
 name = "curategpt"
-version = "0.2.4"
+#version = "0.2.4"
+dynamic = ["version"]
 description = "CurateGPT"
 authors = [
     {name="Chris Mungall", email="cjmungall@lbl.gov"},
@@ -122,6 +123,7 @@ requires = ["hatchling", "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
 
 [tool.uv-dynamic-versioning]
+fallback-version = "0.2.4"
 enable = false
 vcs = "git"
 style = "pep440"
