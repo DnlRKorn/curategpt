@@ -122,6 +122,9 @@ default-groups = ["dev", "optional","bioc","gpt4all","paperqa"]
 requires = ["hatchling", "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
 
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
 [tool.uv-dynamic-versioning]
 fallback-version = "0.2.4"
 enable = false
